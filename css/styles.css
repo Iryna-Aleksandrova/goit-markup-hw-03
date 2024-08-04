@@ -39,15 +39,24 @@ address {
   font-style: normal;
 }
 /* Common */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
-}
-
-.section {
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 /* Header */
@@ -149,6 +158,9 @@ address {
 .hero {
   background-color: #2e2f42;
   color: #ffffff;
+}
+
+.main-container {
   padding: 188px 0;
 }
 
@@ -195,25 +207,14 @@ address {
 /* Section 2 Benefits */
 .benefits {
   background-color: #ffffff;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  padding: 120px 0;
 }
 
 .benefits-list {
   display: flex;
   flex-direction: row;
   gap: 24px;
+  justify-content: center;
 }
 
 .benefits-subtitle {
@@ -234,21 +235,18 @@ address {
 }
 .benefits-list-item {
   width: calc((100% - 72px) / 4);
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
 /* Section 3 Our Team */
+.team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
 .team-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 24px;
-  padding-bottom: 120px;
-}
-
-.team {
-  background-color: #f4f4fd;
 }
 
 .team-title {
@@ -259,7 +257,6 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-top: 120px;
   padding-bottom: 72px;
 }
 
